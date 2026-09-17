@@ -1,5 +1,5 @@
-# OS4P_Arduino_Group16
-
+# Instructions
+Below we list the instructions to reproduce our project, have fun!
 
 ## Prerequisites
 For this project  you need the Arduino IDE installed on your computer. 
