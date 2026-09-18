@@ -29,6 +29,7 @@ This step is recommended but not strictly necessary for this project.
 
 There is always a possibility that the Arduino Uno itself is faulty, thus it is recommended to perform a simple test to rule this out.
 For this, the Arduino Uno, the USB-B 2.0 to USB-C cable, and a computer (with the Arduino IDE installed) is needed. Connect the Arduino Uno to the computer with the USB cable and open the Arduino IDE. Then open the "Blink" script under "File -> Examples -> 01.Basics -> Blink", this is a very basic code that makes the on-board LED blink. To run the script, verify it by pressing the check mark at the top left, afterwards upload it by pressing the arrow on the right of it and select the Arduino. If everything worked correctly, the on-board LED should now be blinking and this step is done. If not, then there might be an issue with the Arduino Uno.
+For more information about this step can be found in the official Arduino documentation: https://docs.arduino.cc/built-in-examples/basics/Blink/
 
 ## The code
 The code for the Arduino can be found in the folder [Code](/Code). The .ino files are files with code for the Arduino.
