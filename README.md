@@ -14,7 +14,7 @@ For this project you need:
 - 16 cables
 - 1 USB-B 2.0 to USB-C
 - 1 CO2 sensor (MH-Z19C, 400-2000PPM, 202 101 15)
-- 1 P/T/RH sensor ()
+- 1 P/T/RH sensor (BME/BMP280))
 - 1 SD card
 - 1 SD card reader
 - 1 Arduino Uno
