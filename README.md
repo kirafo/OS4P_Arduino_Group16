@@ -32,7 +32,7 @@ For this, the Arduino Uno, the USB-B 2.0 to USB-C cable, and a computer (with th
 For more information about this step can be found in the official Arduino documentation: https://docs.arduino.cc/built-in-examples/basics/Blink/
 
 ## brief introduction to the arduino ide software? 
-tell them for instance how to open the se
+tell them for instance how to open the serial monitor etc
 
 
 ## Connecting the Arduino and sensors
