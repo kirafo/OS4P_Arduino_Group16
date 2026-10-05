@@ -61,7 +61,7 @@ Done deleting files in root.
 ### Taking data
 After wiping the SD card we should be left with a fully empty SD card so we can start taking data. To take the data perform the following steps:
 1. Create a New Sketch in Arduino IDE (File --> New Sketch), again confirm the connection with Arduino Uno
-2. Replace the default code with the full code from [take_data.ino](/Code/take_data.ino) #IF THE NEW CODE IS WORKING CHANGE THE FILE!!!
+2. Replace the default code with the full code from [take_data_updated.ino](/Code/take_data_updated.ino) 
 3. In this code you can change the variable `runId`, which will change the filename of the datafile. 
 >[!NOTE]
 >By default `runId = 0`, which gives you the filename `data000.csv` for your datafile. The code will check if the datafile has been made before, if e.g. `data000.csv, data001.csv, data002.csv` already exist, the code will just find the next possible data filename: `data003.csv`. 
