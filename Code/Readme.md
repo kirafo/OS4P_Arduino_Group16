@@ -5,11 +5,11 @@ Here are some useful codes:
 
 [wipe_whole_sd_card.ino](/Code/wipe_whole_sd_card.ino)  This code can be used to wipe the entire sd card, it needs to be uploaded to the Arduino.
  
-(/Code/take_data_updated.ino) Use this code to take data with the Arduino, this code needs to be uploaded to the Arduino.
+[take_data_updated.ino](/Code/take_data_updated.ino)  Use this code to take data with the Arduino, this code needs to be uploaded to the Arduino.
 
-\data_reader_to_serial_monitor.ino With this code, you can read the data-files that are on the Arduino, this code needs to be uploaded to the Arduino.
+[data_reader_to_serial_monitor.ino](/Code/data_reader_to_serial_monitor.ino) With this code, you can read the data-files that are on the Arduino, this code needs to be uploaded to the Arduino.
 
-\data_analysis.py This is a simple python script that can be used to analyze and plot the data. This does not get uploaded to the Arduino. You can use it on your computer like any other python code.
+[data_analysis.py](/Code/data_analysis.py) This is a simple python script that can be used to analyze and plot the data. This does not get uploaded to the Arduino. You can use it on your computer like any other python code.
 
  
 
