@@ -5,9 +5,9 @@ Below we list the instructions to reproduce our project, have fun!
 For this project you need the Arduino IDE installed on your computer. We used version 1.8.19, other versions might also work.
 
 Download the Arduino IDE from the official website for your specific operating system and follow the installation instructions:
-https://www.arduino.cc/en/software/
+https://www.Arduino.cc/en/software/
 
-Here is the official Arduino documentation for more information: https://docs.arduino.cc/software/ide/
+Here is the official Arduino documentation for more information: https://docs.Arduino.cc/software/ide/
 
 For this project you need:
 
@@ -29,20 +29,20 @@ This step is recommended but not strictly necessary for this project.
 
 There is always a possibility that the Arduino Uno itself is faulty, thus it is recommended to perform a simple test to rule this out.
 For this, the Arduino Uno, the USB-B 2.0 to USB-C cable, and a computer (with the Arduino IDE installed) is needed. Connect the Arduino Uno to the computer with the USB cable and open the Arduino IDE. Then open the "Blink" script under "File -> Examples -> 01.Basics -> Blink", this is a very basic code that makes the on-board LED blink. To run the script, verify it by pressing the check mark at the top left, afterwards upload it by pressing the arrow on the right of it and select the Arduino. If everything worked correctly, the on-board LED should now be blinking and this step is done. If not, then there might be an issue with the Arduino Uno.
-For more information about this step can be found in the official Arduino documentation: https://docs.arduino.cc/built-in-examples/basics/Blink/
+For more information about this step can be found in the official Arduino documentation: https://docs.Arduino.cc/built-in-examples/basics/Blink/
 
-## brief introduction to the arduino ide software? 
+## brief introduction to the Arduino ide software? 
 tell them for instance how to open the serial monitor etc
 
 
 ## Connecting the Arduino and sensors
-tell them how to connect the arduino with the sensors via the breadboard and give them a nice schematic so that is clear how to put the wires, also explain a bit how the IDE software works and how to upload code to arduino etc
+tell them how to connect the Arduino with the sensors via the breadboard and give them a nice schematic so that is clear how to put the wires, also explain a bit how the IDE software works and how to upload code to Arduino etc
 
 >[!IMPORTANT]
 >Make sure all wires are properly connected, a single loose/disconnected wire may cause unexpected issues. Please keep in mind that by moving the Arduino and its connected sensors wires can get loose or disconnected so please check the connections after moving the setup to avoid unexpected errors. 
 
-## Controlling the arduino
-Once the Arduino and the sensors are connected, one can use the Arduino IDE software to write, compile and upload code to the arduino in order to get it to do something. You can find the C++ code that we used to obtain our results in the folder [Code](/Code). The .ino files are files with code for the Arduino. One can copy the code from these files into a new project in the Arduino IDE application, you can then compile the code by pressing the check mark (top left corner) and then upload the code to the arduino with the upload button (right arrow next to the compile button). The code will then be sent to the arduino and it will start running the code. 
+## Controlling the Arduino
+Once the Arduino and the sensors are connected, you can use the Arduino IDE software to write, compile and upload code to the Arduino in order to get it to do something. You can find the C++ code that we used to obtain our results in the folder [Code](/Code). The .ino files are files with code for the Arduino. You can copy the code from these files into a new project in the Arduino IDE application, you can then compile the code by pressing the check mark (top left corner) and then upload the code to the Arduino with the upload button (right arrow next to the compile button). The code will then be sent to the Arduino and it will start running the code. 
 ### Wipe the SD card 
 We recommend to first clean the SD card in the SD card reader. We can do this via the Arduino:
 1. Create a New Sketch in Arduino IDE (File --> New Sketch), make sure the Arduino Uno is connected and visible for the IDE software by clicking Arduino Uno next to the verify/upload buttons and check if it shows Arduino Uno with a port name like e.g. COM 7
@@ -106,4 +106,4 @@ After you obtained the data you can analyze this data by running the python scri
 
 ## Troubleshooting
 
-- The right device needs to be selected when uploading the code to the Arduino. It should include "arduino" in the name.
+- The right device needs to be selected when uploading the code to the Arduino. It should include "Arduino" in the name.
