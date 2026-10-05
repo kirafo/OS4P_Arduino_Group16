@@ -106,4 +106,19 @@ After you obtained the data you can analyze this data by running the python scri
 
 ## Troubleshooting
 
-- The right device needs to be selected when uploading the code to the Arduino. It should include "Arduino" in the name.
+- The right device needs to be selected when uploading the code to the Arduino. It should include Arduino" in the name.
+  
+```
+sketch_oct05a:4:10: fatal error: Adafruit_BME280.h: No such file or directory
+ #include <Adafruit_BME280.h>
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+exit status 1
+Adafruit_BME280.h: No such file or directory
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
+```
+- This error message (when attempting to take data) means that one of the necersarry libraries is not installed on the Arduino IDE. To fix this open "Sketch -> Include -> Library -> Manage Libraries" in the IDE. Then search for Adafruit BME280 and click on "Install all".
+
