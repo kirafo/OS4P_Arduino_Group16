@@ -5,8 +5,8 @@ const int chipSelect = 10;
 File myFile;
 
 // select the filename you want to read from the sd card
-const char filename[] = "data001.csv";
-
+const char filename["runId"] = ; //the default runId is "data001.csv"
+ 
 
 // this code print the whole content of the datafile in the *serial monitor* in the Arduino IDE
 void setup() {
