@@ -91,7 +91,7 @@ CO2 bytes received: 9 / 9. CO2: 678 ppm. T: 24.76 C | P: 102545.22 Pa | H: 40.32
 
 ### Getting the data on your own PC / laptop
 After you take the data, of course you want to be able to get the data from the SD card to your PC / laptop to analyze the data. There are two ways to get the data from the SD card: The easiest is taking the SD card out of the SD card reader that was connected to the Arduino, then plugging it into your own PC / laptop if possible. Then simply copy the datafiles you have made to a folder called `data` on your computer. If you don't have a SD card reader on your PC / laptop, don't worry we got you covered! The following steps will tell you how to get the data trough the Arduino:
-1. Create again a New Sketch in the Arduino IDE software (File --> New Sketch)
+1. Create again a New Sketch in the Arduino IDE software (File --> New Sketch or File --> New )
 2. Replace the default code with the code from [data_reader_to_serial_monitor](/Code/data_reader_to_serial_monitor.ino)
 3. Change the variable `runId` in this code to the one corresponding to the filename of the run you want to get the data from
 4. Verify and Upload the code
