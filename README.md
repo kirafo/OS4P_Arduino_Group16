@@ -33,12 +33,17 @@ There is always a possibility that the Arduino Uno itself is faulty, thus it is 
 For this, the Arduino Uno, the USB-B 2.0 to USB-C cable, and a computer (with the Arduino IDE installed) is needed. Connect the Arduino Uno to the computer with the USB cable and open the Arduino IDE. Then open the "Blink" script under "File -> Examples -> 01.Basics -> Blink", this is a very basic code that makes the on-board LED blink. To run the script, verify it by pressing the check mark at the top left, afterwards upload it by pressing the arrow on the right of it and select the Arduino. If everything worked correctly, the on-board LED should now be blinking and this step is done. If not, then there might be an issue with the Arduino Uno.
 For more information about this step can be found in the official Arduino documentation: https://docs.Arduino.cc/built-in-examples/basics/Blink/
 
-## brief introduction to the Arduino ide software? 
+## brief introduction to the Arduino IDE software? 
 tell them for instance how to open the serial monitor etc
 
 
 ## Connecting the Arduino and sensors
-tell them how to connect the Arduino with the sensors via the breadboard and give them a nice schematic so that is clear how to put the wires, also explain a bit how the IDE software works and how to upload code to Arduino etc
+
+<img width="1225" height="792" alt="image" src="https://github.com/user-attachments/assets/4a48910b-05a3-4d90-adc9-28120f85cdc4" />
+This schematic shows how the bread board and the Arduino UNO need to be connected. The colors of the cables are arbitrary, we chose to use different colors for clarity. 
+
+
+The software we used did not have the sensors/reader, so we used black cables as placeholders. In the attached photo, you can see how the sensors need to be connected to the bread board.
 
 >[!IMPORTANT]
 >Make sure all wires are properly connected, a single loose/disconnected wire may cause unexpected issues. Please keep in mind that by moving the Arduino and its connected sensors wires can get loose or disconnected so please check the connections after moving the setup to avoid unexpected errors. 
