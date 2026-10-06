@@ -1,4 +1,6 @@
 # Instructions
+For this project we connected a CO2 sensor and a P/T/RH sensor (pressure, temperature, relative humidity) to an Arduino UNO to take environmental data, we included a short python script to plot the data.
+
 Below we list the instructions to reproduce our project, have fun!
 
 ## Prerequisites
@@ -101,7 +103,7 @@ After you take the data, of course you want to be able to get the data from the 
 
 
 ### Analyzing the data
-After you obtained the data you can analyze this data by running the python script [data_analysis.py](data_analysis.py). Download this python code to your pc and **place it in the folder where you have made your `data` folder**. In this code you can change the filename of the data you want to analyze and then you can simply run the code with your favourite python interpreter. After running the data analysis script it will make the plots for you. 
+After you obtained the data you can analyze this data by running the python script [data_analysis.py](data_analysis.py). Download this python code to your pc and **place it in the same folder where you store your `data`**. In this code change the filename of the data you want to analyze and then you can simply run the code with your favourite python interpreter. After running the data analysis script it will make the plots for you. 
 
 
 ## Troubleshooting
