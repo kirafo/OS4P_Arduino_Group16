@@ -4,7 +4,7 @@ For this project we connected a CO2 sensor and a P/T/RH sensor (pressure, temper
 Below we list the instructions to reproduce our project, have fun!
 
 ## Prerequisites
-For this project you need the Arduino IDE installed on your computer. We used version 1.8.19, other versions might also work.
+For this project you need the Arduino IDE installed on your computer. We used version 1.8.19 and version 2.3.10, other versions might also work.
 
 Download the Arduino IDE from the official website for your specific operating system and follow the installation instructions:
 https://www.Arduino.cc/en/software/
