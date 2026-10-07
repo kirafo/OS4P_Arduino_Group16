@@ -16,13 +16,13 @@ For this project you need:
 The hardware was provided to us by the Utrecht University but we included links on where the hardware could be purchased. We are not affiliated with the linked vendors, nor doe we have experience with it.
 
 - 16 cables
-- 1 USB-B 2.0 to USB-C [https://www.tinytronics.nl/en/cables-and-connectors/cables-and-adapters/usb/usb-b/goobay-67985-usb-c-usb-b-2.0-cable-1m](https://www.tinytronics.nl/en/cables-and-connectors/cables-and-adapters/usb/usb-b/goobay-67985-usb-c-usb-b-2.0-cable-1m)
-- 1 CO2 sensor (MH-Z19C, 400-2000PPM, 202 101 15) [https://www.tinytronics.nl/en/sensors/air/gas/winsen-mh-z19c-co2-sensor-with-cable](https://www.tinytronics.nl/en/sensors/air/gas/winsen-mh-z19c-co2-sensor-with-cable)
-- 1 P/T/RH sensor (BME/BMP280) [https://www.tinytronics.nl/nl/sensoren/lucht/druk/bme280-digitale-barometer-druk-en-vochtigheid-sensor-module-met-level-converter](https://www.tinytronics.nl/nl/sensoren/lucht/druk/bme280-digitale-barometer-druk-en-vochtigheid-sensor-module-met-level-converter)
-- 1 micro SD card (32 GB, other sizes might also work) [https://www.amazon.nl/-/en/SanDisk-Android-MicroSDXC-Adapter-Smartphones/dp/B08GY9NYRM](https://www.amazon.nl/-/en/SanDisk-Android-MicroSDXC-Adapter-Smartphones/dp/B08GY9NYRM?th=1)
-- 1 micro SD card reader [https://www.otronic.nl/nl/micro-sd-kaartlezer-voor-arduino](https://www.otronic.nl/nl/micro-sd-kaartlezer-voor-arduino)
+- 1 USB-B 2.0 to USB-C [available here](https://www.tinytronics.nl/en/cables-and-connectors/cables-and-adapters/usb/usb-b/goobay-67985-usb-c-usb-b-2.0-cable-1m)
+- 1 CO2 sensor (MH-Z19C, 400-2000PPM, 202 101 15) [available here](https://www.tinytronics.nl/en/sensors/air/gas/winsen-mh-z19c-co2-sensor-with-cable)
+- 1 P/T/RH sensor (BME/BMP280) [available here](https://www.tinytronics.nl/nl/sensoren/lucht/druk/bme280-digitale-barometer-druk-en-vochtigheid-sensor-module-met-level-converter)
+- 1 micro SD card (32 GB, other sizes might also work) [available here](https://www.amazon.nl/-/en/SanDisk-Android-MicroSDXC-Adapter-Smartphones/dp/B08GY9NYRM?th=1)
+- 1 micro SD card reader [available here](https://www.otronic.nl/nl/micro-sd-kaartlezer-voor-arduino)
 - 1 Arduino Uno
-- 1 Breadboard [https://www.tinytronics.nl/en/tools-and-mounting/prototyping-supplies/breadboards/breadboard-400-points](https://www.tinytronics.nl/en/tools-and-mounting/prototyping-supplies/breadboards/breadboard-400-points)
+- 1 Breadboard [available here](https://www.tinytronics.nl/en/tools-and-mounting/prototyping-supplies/breadboards/breadboard-400-points)
 - 1 thin stick/pen to press the reset button
  
 This is a photo of the parts we used, note that not all cables are shown in the photo.
