@@ -1,3 +1,5 @@
+This folder contains all necessary code and some (analyzed) test data.
+
 Here are some useful codes:
 
 
@@ -13,3 +15,4 @@ Here are some useful codes:
 
  
 
+[old_take_data.ino](/Code/old_take_data.ino) This is an old version of the data taking code, that we no longer use.
