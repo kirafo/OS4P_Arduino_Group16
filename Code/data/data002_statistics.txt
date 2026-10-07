@@ -1,0 +1,7 @@
+Basic statistics:
+CO2:         min = 406.0 max = 1360.0 mean = 589.679012345679
+Temperature: min = 22.49 max = 24.44 mean = 23.694074074074074
+Pressure:    min = 101683.22 max = 101818.96 mean = 101747.7061728395
+Humidity:    min = 51.99 max = 56.75 mean = 53.888888888888886
+
+Samples with CO2 > 800 ppm: 10
