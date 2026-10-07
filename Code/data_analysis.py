@@ -1,3 +1,4 @@
+from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -5,10 +6,10 @@ import matplotlib.pyplot as plt
 # 1. Configuration
 # -------------------------
 
-FILENAME = "./data/data001.csv"   # change to your file name/path
+FILENAME = "data002.csv"   # change to your file name/path
 DELIMITER = ","             # your CSV uses commas
 HAS_HEADER = True           # first row is header
-
+BASE = Path(FILENAME).stem  # "data002"
 
 # -------------------------
 # 2. Load CSV with NumPy
@@ -46,7 +47,6 @@ print("Humidity   :", humidity[:5])
 # -------------------------
 # 4. Basic analysis
 # -------------------------
-
 print("\nBasic statistics:")
 print("CO2:        min =", np.min(co2),        "max =", np.max(co2),        "mean =", np.mean(co2))
 print("Temperature: min =", np.min(temperature), "max =", np.max(temperature), "mean =", np.mean(temperature))
@@ -57,6 +57,16 @@ threshold_co2 = 800
 mask_high_co2 = co2 > threshold_co2
 print("\nSamples with CO2 >", threshold_co2, "ppm:", mask_high_co2.sum())
 
+with open(f"{BASE}_statistics.txt", "w") as f:
+	print("Basic statistics:", file=f)
+	print("CO2:         min =", np.min(co2),         "max =", np.max(co2),         "mean =", np.mean(co2), file=f)
+	print("Temperature: min =", np.min(temperature), "max =", np.max(temperature), "mean =", np.mean(temperature), file=f)
+	print("Pressure:    min =", np.min(pressure),    "max =", np.max(pressure),    "mean =", np.mean(pressure), file=f)
+	print("Humidity:    min =", np.min(humidity),    "max =", np.max(humidity),    "mean =", np.mean(humidity), file=f)
+
+	threshold_co2 = 800
+	mask_high_co2 = co2 > threshold_co2
+	print("\nSamples with CO2 >", threshold_co2, "ppm:", mask_high_co2.sum(), file=f)
 
 # -------------------------
 # 5. Plotting
@@ -70,7 +80,8 @@ plt.ylabel("CO2 (ppm)")
 plt.title("CO2 over time")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+#plt.show()
+plt.savefig(f"{BASE}_CO2.png", dpi=300)
 
 # 5.2 Temperature and humidity over time
 plt.figure(figsize=(10, 4))
@@ -82,7 +93,8 @@ plt.title("Temperature and humidity over time")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+#plt.show()
+plt.savefig(f"{BASE}_temp_humidity.png", dpi=300)
 
 # 5.3 Pressure over time
 plt.figure(figsize=(10, 4))
@@ -92,7 +104,8 @@ plt.ylabel("Pressure (Pa)")
 plt.title("Pressure over time")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+#plt.show()
+plt.savefig(f"{BASE}_pressure.png", dpi=300)
 
 # 5.4 Optional: smoothed CO2 (simple moving average)
 window = 10  # number of points in moving window
@@ -110,6 +123,8 @@ if len(co2) >= window:
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
+    #plt.show()
+    plt.savefig(f"{BASE}_CO2_average.png", dpi=300)
     plt.show()
 else:
     print("\nNot enough data points to compute a moving average with window =", window)
