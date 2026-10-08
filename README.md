@@ -1,6 +1,6 @@
 # Introduction
 For this project we connected a CO2 sensor and a P/T/RH sensor (pressure, temperature, relative humidity) to an Arduino UNO to take environmental data, we included a short python script to plot the data.
-The instructions can be found in [Instructions.md](/Instructions.md), all necessary code for the Arduino and the data analysis can be found in the folder "Code". The expected output from the data analysis can be found in the folder [data](/Code/data).
+The instructions can be found in [Instructions.md](/Instructions.md), all necessary code for the Arduino and the data analysis can be found in the folder "Code". Our small research/test results can be found in the folder [data](/Code/data).
 
 Below we list the prerequisites to reproduce our project, have fun!
 
