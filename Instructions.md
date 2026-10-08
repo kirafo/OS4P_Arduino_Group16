@@ -11,14 +11,13 @@ For more information about this step can be found in the official Arduino docume
 <!-- tell them for instance how to open the serial monitor etc -->
 
 
-## Connecting the Arduino and sensors
-
+## Connecting the Arduino UNO and sensors
+For this project, you need to connect the sensors with the Arduino UNO, this is done using the bread board and the cables. Below, you can see a schematic of how everything needs to be connected. The colors of the cables are arbitrary, we chose to use different colors for clarity. The software we used did not have the sensors/reader, so we used black cables as placeholders.
 <img width="1225" height="792" alt="image" src="https://github.com/user-attachments/assets/4a48910b-05a3-4d90-adc9-28120f85cdc4" />
-This schematic shows how the bread board and the Arduino UNO need to be connected. The colors of the cables are arbitrary, we chose to use different colors for clarity. 
-
+ 
+The orientation of the sensors/SD card reader in the bread board matters, the picture below shows how the sensors/SD card reader needs to be placed.
 <img width="1401" height="1600" alt="WhatsApp Image 2026-10-08 at 08 33 33" src="https://github.com/user-attachments/assets/bea9554e-02c8-4e3d-99b4-b798aff6165d" />
 
-The software we used did not have the sensors/reader, so we used black cables as placeholders. In the attached photo, you can see how the sensors need to be connected to the bread board.
 
 >[!IMPORTANT]
 >Make sure all wires are properly connected, a single loose/disconnected wire may cause unexpected issues. Please keep in mind that by moving the Arduino and its connected sensors wires can get loose or disconnected so please check the connections after moving the setup to avoid unexpected errors. 
