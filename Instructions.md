@@ -83,7 +83,7 @@ After you take the data, of course you want to be able to get the data from the 
 
 
 ### Analyzing the data
-After you obtained the data you can analyze this data by running the python script [data_analysis.py](data_analysis.py). Download this python code to your pc and **place it in the same folder where you store your `data`**. In this code change the filename of the data you want to analyze and then you can simply run the code with your preferred python interpreter. After running the data analysis script it will make the plots for you. 
+After you obtained the data you can analyze this data by running the python script [data_analysis.py](/Code/data_analysis.py). Download this python code to your pc and **place it in the same folder where you store your `data`**. In this code change the filename of the data you want to analyze and then you can simply run the code with your preferred python interpreter. After running the data analysis script it will make the plots for you. 
 
 
 ## Troubleshooting
