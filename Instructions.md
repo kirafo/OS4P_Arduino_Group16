@@ -16,6 +16,7 @@ For more information about this step can be found in the official Arduino docume
 <img width="1225" height="792" alt="image" src="https://github.com/user-attachments/assets/4a48910b-05a3-4d90-adc9-28120f85cdc4" />
 This schematic shows how the bread board and the Arduino UNO need to be connected. The colors of the cables are arbitrary, we chose to use different colors for clarity. 
 
+<img width="1401" height="1600" alt="WhatsApp Image 2026-10-08 at 08 33 33" src="https://github.com/user-attachments/assets/bea9554e-02c8-4e3d-99b4-b798aff6165d" />
 
 The software we used did not have the sensors/reader, so we used black cables as placeholders. In the attached photo, you can see how the sensors need to be connected to the bread board.
 
