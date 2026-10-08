@@ -24,12 +24,12 @@ The software we used did not have the sensors/reader, so we used black cables as
 >Make sure all wires are properly connected, a single loose/disconnected wire may cause unexpected issues. Please keep in mind that by moving the Arduino and its connected sensors wires can get loose or disconnected so please check the connections after moving the setup to avoid unexpected errors. 
 
 ## Controlling the Arduino
-Once the Arduino and the sensors are connected, you can use the Arduino IDE software to write, compile and upload code to the Arduino in order to get it to do something. You can find the C++ code that we used to obtain our results in the folder [Code](/Code). The .ino files are files with code for the Arduino. You can copy the code from these files into a new project in the Arduino IDE application, you can then compile the code by pressing the check mark (top left corner) and then upload the code to the Arduino with the upload button (right arrow next to the compile button). The code will then be sent to the Arduino and it will start running the code. When you want to see the 'terminal' output of the Arduino, you can open the Serial Monitor by pressing the button in the top right corner or with `Ctrl + Shift + M` in Arduino IDE. 
+Once the Arduino and the sensors are connected, you can use the Arduino IDE software to write, compile and upload code to the Arduino in order to get it to do something. You can find the C++ code that we used to obtain our results in the folder [Code](/Code). The `.ino` files are files with code for the Arduino. You can copy the code from these files into a new project in the Arduino IDE application, you can then compile the code by pressing the check mark (top left corner) and then upload the code to the Arduino with the upload button (right arrow next to the compile button). The code will then be sent to the Arduino and it will start running the code. When you want to see the 'terminal' output of the Arduino, you can open the Serial Monitor by pressing the button in the top right corner or with `Ctrl + Shift + M` in Arduino IDE. 
 ### Wipe the SD card 
 We recommend to first clean the SD card in the SD card reader. We can do this via the Arduino:
 1. Create a New Sketch in Arduino IDE (File --> New Sketch), make sure the Arduino UNO is connected and visible for the IDE software by clicking Arduino UNO next to the verify/upload buttons and check if it shows Arduino UNO with a port name like e.g. COM 7
 2. Replace the default code with the code from [wipe_whole_sd_card.ino](/Code/wipe_whole_sd_card.ino) 
-3. Compile the code with the checkmark button
+3. Compile the code with the check mark button
 4. Upload the code to the Arduino with the right arrow button
 5. If it was performed correctly the serial monitor (button on the top right) should have the following output:
 ```
@@ -44,10 +44,10 @@ Done deleting files in root.
 After wiping the SD card we should be left with a fully empty SD card so we can start taking data. To take the data perform the following steps:
 1. Create a New Sketch in Arduino IDE (File --> New Sketch), again confirm the connection with Arduino UNO
 2. Replace the default code with the full code from [take_data_updated.ino](/Code/take_data_updated.ino) 
-3. In this code you can change the variable `runId`, which will change the filename of the datafile. 
+3. In this code you can change the variable `runId`, which will change the filename of the data file. 
 >[!NOTE]
->By default `runId = 0`, which gives you the filename `data000.csv` for your datafile. The code will check if the datafile has been made before, if e.g. `data000.csv, data001.csv, data002.csv` already exist, the code will just find the next possible data filename: `data003.csv`. 
-4. Verify and upload the code to the Arduino, it will now start running untill you disconnect the usb connection with your pc/laptop.
+>By default `runId = 0`, which gives you the filename `data000.csv` for your data file. The code will check if the data file has been made before, if e.g. `data000.csv, data001.csv, data002.csv` already exist, the code will just find the next possible data filename: `data003.csv`. 
+4. Verify and upload the code to the Arduino, it will now start running until you disconnect the USB connection with your PC/laptop.
 >[!TIP]
 >The code will take a sample every 10 seconds, this can be changed by changing the value `const int time_step  = 10000;` (see ---------- PIN & SYSTEM SETTINGS ---------- in the code ). The time step is set in milliseconds.
 5. If the code is performing correctly you should see an output in the Serial Monitor similar to this:
@@ -72,18 +72,18 @@ CO2 bytes received: 9 / 9. CO2: 678 ppm. T: 24.76 C | P: 102545.22 Pa | H: 40.32
 > When connecting the Arduino UNO to a power supply or laptop it will immediately start running the code that was last uploaded. So if for example you run the `take_data` code first from your laptop, then disconnect, and then reconnect again, it will start building a new data file with the `runId` of the previous.
 
 ### Getting the data on your own PC / laptop
-After you take the data, of course you want to be able to get the data from the SD card to your PC / laptop to analyze the data. There are two ways to get the data from the SD card: The easiest is taking the SD card out of the SD card reader that was connected to the Arduino, then plugging it into your own PC / laptop if possible. Then simply copy the datafiles you have made to a folder called `data` on your computer. If you don't have a SD card reader on your PC / laptop, don't worry we got you covered! The following steps will tell you how to get the data trough the Arduino:
+After you take the data, of course you want to be able to get the data from the SD card to your PC / laptop to analyze the data. There are two ways to get the data from the SD card: The easiest is taking the SD card out of the SD card reader that was connected to the Arduino, then plugging it into your own PC / laptop if possible. Then simply copy the data files you have made to a folder called `data` on your computer. If you don't have a SD card reader on your PC / laptop, don't worry we got you covered! The following steps will tell you how to get the data trough the Arduino:
 1. Create again a New Sketch in the Arduino IDE software (File --> New Sketch or File --> New )
 2. Replace the default code with the code from [data_reader_to_serial_monitor](/Code/data_reader_to_serial_monitor.ino)
 3. Change the variable `runId` in this code to the one corresponding to the filename of the run you want to get the data from
 4. Verify and Upload the code
 5. The whole content will now be written to the Serial Monitor in the Arduino IDE software
 6. Copy the output with the copy output button on the top right corner of the serial monitor (don't try to select it by hand because you can only select the part that is actually visible in the Serial Monitor)
-7. Copy that csv formatted text into a .txt file on your computer and convert it into a .csv file, put this data file in a folder called `data` on your computer
+7. Copy that `.csv` formatted text into a `.txt` file on your computer and convert it into a `.csv` file, put this data file in a folder called `data` on your computer
 
 
 ### Analyzing the data
-After you obtained the data you can analyze this data by running the python script [data_analysis.py](/Code/data_analysis.py). Download this python code to your pc and **place it in the same folder where you store your `data`**. In this code change the filename of the data you want to analyze and then you can simply run the code with your preferred python interpreter. After running the data analysis script it will make the plots for you. 
+After you obtained the data you can analyze this data by running the python script [data_analysis.py](/Code/data_analysis.py). Download this python code to your PC and **place it in the same folder where you store your `data`**. In this code change the filename of the data you want to analyze and then you can simply run the code with your preferred python interpreter. After running the data analysis script it will make the plots for you. The plots and the statistics will automatically be saved in the same folder.
 
 
 ## Troubleshooting
