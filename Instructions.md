@@ -4,12 +4,51 @@ These are the instructions on how to use the Arduino UNO to measure CO2, tempera
 This step is recommended but not strictly necessary for this project.
 
 There is always a possibility that the Arduino UNO itself is faulty, thus it is recommended to perform a simple test to rule this out.
-For this, the Arduino UNO, the USB-B 2.0 to USB-C cable, and a computer (with the Arduino IDE installed) is needed. Connect the Arduino UNO to the computer with the USB cable and open the Arduino IDE. Then open the "Blink" script under "File -> Examples -> 01.Basics -> Blink", this is a very basic code that makes the on-board LED blink. To run the script, verify it by pressing the check mark at the top left, afterwards upload it by pressing the arrow on the right of it and select the Arduino. If everything worked correctly, the on-board LED should now be blinking and this step is done. If not, then there might be an issue with the Arduino UNO.
-For more information about this step can be found in the official Arduino documentation: https://docs.Arduino.cc/built-in-examples/basics/Blink/
+For this, the Arduino UNO, the USB-B 2.0 to USB-C cable, and a computer (with the Arduino IDE installed) are needed. Connect the Arduino UNO to the computer with the USB cable and open the Arduino IDE. Then open the "Blink" script under "File -> Examples -> 01.Basics -> Blink", this is a very basic code that makes the on-board LED blink. To run the script, verify it by pressing the check mark at the top left, afterwards upload it by pressing the arrow on the right of it and selecting the Arduino. If everything worked correctly, the on-board LED should now be blinking, and this step is done. If not, then there might be an issue with the Arduino UNO.
+More information about this step can be found in the official Arduino documentation: https://docs.Arduino.cc/built-in-examples/basics/Blink/
 
 <!-- CSV## brief introduction to the Arduino IDE software? -->
 <!-- tell them for instance how to open the serial monitor etc -->
 
+## Software setup
+
+### Arduino libraries
+
+Install the Arduino IDE as described in the main README. Before uploading the measurement code, install the sensor library:
+
+1. Open **Sketch → Include Library → Manage Libraries** in the Arduino IDE.
+2. Search for **Adafruit BME280 Library** and install it.
+3. If prompted, install all required dependencies, including **Adafruit Unified Sensor** and **Adafruit BusIO**.
+
+The code also uses `SPI`, `SD`, and `SoftwareSerial`. These are normally available with the Arduino IDE and the Arduino AVR Boards package.
+
+Select **Arduino Uno** as the board and choose the port connected to your device. Set the Serial Monitor baud rate to **9600** to match the measurement code.
+
+### Python packages
+
+The data analysis script runs on your computer, not on the Arduino. It requires Python 3 and the packages `numpy` and `matplotlib`.
+
+Install the packages from a terminal:
+
+```bash
+python -m pip install numpy matplotlib
+```
+
+Download the repository and open a terminal in its `Code` folder. In `data_analysis.py`, change `FILENAME` to the path of the CSV file you want to analyse. For the included example:
+
+```python
+FILENAME = "data/data002.csv"
+```
+
+Run the script:
+
+```bash
+python data_analysis.py
+```
+
+The plots and statistics will be saved in the current working directory, which is the `Code` folder when following these instructions.
+
+If your system uses `python3` instead of `python`, use `python3` in both commands above.
 
 ## Connecting the Arduino UNO and sensors
 For this project, you need to connect the sensors with the Arduino UNO, this is done using the bread board and the cables. Below, you can see a schematic of how everything needs to be connected. The colors of the cables are arbitrary, we chose to use different colors for clarity. The software we used did not have the sensors/reader, so we used black cables as placeholders.
