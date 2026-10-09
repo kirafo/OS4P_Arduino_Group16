@@ -12,7 +12,8 @@ https://www.Arduino.cc/en/software/
 
 Here is the official Arduino documentation for more information: https://docs.Arduino.cc/software/ide/
 
-For this project you need:
+For this project you need the following hardware:
+
 The hardware was provided to us by the Utrecht University but we included links on where the hardware could be purchased. We are not affiliated with the linked vendors, nor doe we have experience with it.
 
 - 16 cables
