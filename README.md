@@ -28,7 +28,7 @@ The hardware was provided to us by the Utrecht University but we included links 
 This is a photo of the parts we used, note that not all cables are shown in the photo.
 <img width="1200" height="1600" alt="Untitled design" src="https://github.com/user-attachments/assets/f52b134b-e6e1-4483-adda-6f340c5cf095" />
 
-#Contributors and contact information
+## Contributors and contact information
 The members of our group are:
 - Tamas Szecsenyi
 - Ardjan Westveer
