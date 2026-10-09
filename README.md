@@ -36,7 +36,7 @@ The members of our group are:
 - Kira Oberle
 - Pieter Dijkhuizen
 - Mingyuan Wang
-- Lauri Steven's
+- Lauri Stevens
 
 If you encounter any issues we have not covered feel free to contact us via email: a.m.f.westveer@students.uu.nl
 
