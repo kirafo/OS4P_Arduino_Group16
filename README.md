@@ -37,6 +37,7 @@ The members of our group are:
 - Pieter Dijkhuizen
 - Mingyuan Wang
 - Lauri Steven's
+
 If you encounter any issues we have not covered feel free to contact us via email: a.m.f.westveer@students.uu.nl
 
 # Copyright 2026 OS4P Group 16
